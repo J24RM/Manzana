@@ -5,7 +5,7 @@ El simulador funciona de la siguiente manera: cuentas con un terreno al cual pue
 En las hectáreas puedes sembrar dos tipos de cultivos: Tomate y Maíz. Cada uno tiene distintos tiempos de crecimiento, necesidades de riego y requisitos específicos de suelo.
 
 
-#Consideraciones
+# Consideraciones
 
 El juego esta hecho para que funcione desde la consola, esta hecho en c++, para poder jugarlo tienes que tener instalado un compilador de c++ en tu ordenador
 
