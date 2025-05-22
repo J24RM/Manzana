@@ -9,7 +9,7 @@ En las hectáreas puedes sembrar dos tipos de cultivos: Tomate y Maíz. Cada uno
 
 El juego esta hecho para que funcione desde la consola, esta hecho en c++, para poder jugarlo tienes que tener instalado un compilador de c++ en tu ordenador
 
-compilar el juego: g++ main.cpp -o main
+compilar el juego: g++ main.cpp Hectarea.cpp Tomate.cpp Maiz.cpp Planta.cpp -o simulador
 
 correr en linux: "/a.out"
 
