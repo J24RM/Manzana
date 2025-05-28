@@ -17,9 +17,8 @@ private:
     int id;
     float flujo_agua;
     bool sembrado;
-    Tomate tomate;
-    Maiz maiz;
-    int tipo; // 1 = Tomate, 2 = Maiz, 0 = ninguna
+    Planta* planta;
+    int tipo;
 
 public:
     Hectarea();
@@ -48,9 +47,8 @@ public:
 
 	//Funciones
 
-	void plantar_tomate(string nombre, float agua_necesaria, string color);
+	void plantar_planta(Planta* plt); // Cambiar a composición
 
-	void plantar_maiz(string nombre, float agua_necesaria, float tamanio);
 
 	float calcular_tiempo_cosecha();
 
