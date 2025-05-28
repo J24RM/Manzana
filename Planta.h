@@ -38,7 +38,7 @@ public:
 
 	//Funcion
 
-	float calcular_tiempo(float agua_necesaria);
+	virtual float calcular_tiempo(float agua_necesaria);
 
 
 };

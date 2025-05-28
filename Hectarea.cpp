@@ -53,27 +53,19 @@ void Hectarea::set_flujo_agua(float _flujo) {
 }
 
 // Funciones
-void Hectarea::plantar_tomate(string nombre, float agua_necesaria, string color) {
+void Hectarea::plantar_planta(Planta* plt) {
     if (sembrado) {
         cout << "Ya hay una planta en esta hectárea.\n";
         return;
     }
-    tomate = Tomate(nombre, agua_necesaria);
-    sembrado = true;
-    tipo = 1;
-    cout << "Tomate sembrado exitosamente.\n";
+    else{
+        planta = plt;
+        sembrado = true;
+        cout << "Planta sembrado exitosamente.\n";
+    }
 }
 
-void Hectarea::plantar_maiz(string nombre, float agua_necesaria, float tamanio) {
-    if (sembrado) {
-        cout << "Ya hay una planta en esta hectárea.\n";
-        return;
-    }
-    maiz = Maiz(nombre, agua_necesaria, tamanio);
-    sembrado = true;
-    tipo = 2;
-    cout << "Maíz sembrado exitosamente.\n";
-}
+
 
 float Hectarea::calcular_tiempo_cosecha() {
     if (!sembrado) {
@@ -81,13 +73,8 @@ float Hectarea::calcular_tiempo_cosecha() {
         return -1;
     }
 
-    if (tipo == 1) {
-        return tomate.calcular_tiempo(flujo_agua);
-    } else if (tipo == 2) {
-        return maiz.calcular_tiempo(flujo_agua);
-    } else {
-        return -1;
-    }
+        return planta->calcular_tiempo(flujo_agua);
+    
 }
 
 bool Hectarea::esta_sembrado() {
