@@ -32,7 +32,3 @@ void Planta::set_Agua_Necesaria(float _a_nece) {
     agua_necesaria = _a_nece;
 }
 
-float Planta::calcular_tiempo(float flujo_agua) {
-    if (agua_necesaria <= 0) return -1;
-    return agua_necesaria / flujo_agua * 10;  
-}
