@@ -12,11 +12,12 @@ protected:
 	string nombre;
 	float agua_necesaria;
 	float tiempo_cosecha;
+	int tipo;
 
 public:
 
 	//Constructor
-	Planta(string n, float a_nece, float T_cosecha);
+	Planta(string n, float a_nece, float T_cosecha, int _tipo);
 
 	Planta();
 

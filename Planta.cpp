@@ -9,10 +9,11 @@ Planta::Planta() {
     agua_necesaria = 0.0;
 }
 
-Planta::Planta(string n, float a_nece, float T_cosecha) {
+Planta::Planta(string n, float a_nece, float T_cosecha, int _tipo) {
     nombre = n;
     agua_necesaria = a_nece;
     tiempo_cosecha = T_cosecha;
+    tipo = _tipo;
 }
 
 

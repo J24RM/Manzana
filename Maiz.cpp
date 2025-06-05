@@ -4,11 +4,11 @@
 
 #include "Maiz.h"
 
-Maiz::Maiz() : Planta("Maiz", 8.0,0){
+Maiz::Maiz() : Planta("Maiz", 8.0,0,2){
     tamanio = 1;
 }
 
-Maiz::Maiz(string n, float a_nece, float t) : Planta(n, a_nece, 1.0){
+Maiz::Maiz(string n, float a_nece, float t, int _tipo) : Planta(n, a_nece, 1.0, _tipo){
     tamanio = t;
 }
 

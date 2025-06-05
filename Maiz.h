@@ -13,7 +13,7 @@ private:
 
 public:
     Maiz();
-    Maiz(string n, float a_nece, float t);
+    Maiz(string n, float a_nece, float t, int _tipo);
 
     float calcular_tiempo(float flujo_agua);  
 

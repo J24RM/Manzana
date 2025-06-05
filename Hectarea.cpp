@@ -53,15 +53,22 @@ void Hectarea::set_flujo_agua(float _flujo) {
 }
 
 // Funciones
-void Hectarea::plantar_planta(Planta* plt) {
+void Hectarea::plantar_planta(int tipo) {
     if (sembrado) {
         cout << "Ya hay una planta en esta hectárea.\n";
         return;
     }
-    else{
-        planta = plt;
+    else if(tipo == 1){
+        Planta* tomate = new Tomate("Tomatillo", 10.0,1);
+        planta = tomate;
         sembrado = true;
-        cout << "Planta sembrado exitosamente.\n";
+        cout << "Tomatillo sembrado exitosamente.\n";
+    }
+    else if (tipo == 2){
+        Planta* maiz = new Maiz("Maicito", 8.0, 1.2,2);
+        planta = maiz;
+        sembrado = true;
+        cout << "Maicito sembrado exitosamente.\n";
     }
 }
 

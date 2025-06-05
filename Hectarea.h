@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "Tomate.h"
 #include "Maiz.h"
+#include "Planta.h"
 
 
 #ifndef HECTAREA_H
@@ -47,7 +48,7 @@ public:
 
 	//Funciones
 
-	void plantar_planta(Planta* plt); // Cambiar a composición
+	void plantar_planta(int tipo); 
 
 
 	float calcular_tiempo_cosecha();

@@ -33,11 +33,9 @@ int main() {
                     cin >> opcion2;
 
                     if (opcion2 == 1) {
-                        Planta* tomate = new Tomate("Tomatillo", 10.0);
-                        t.get_hectareas(i).plantar_planta(tomate);
+                        t.get_hectareas(i).plantar_planta(1);
                     } else if (opcion2 == 2) {
-                        Planta* maiz = new Maiz("Maicito", 8.0, 1.2);
-                        t.get_hectareas(i).plantar_planta(maiz);
+                        t.get_hectareas(i).plantar_planta(2);
                     } else if (opcion2 == 3) {
                         float tiempo = t.get_hectareas(i).calcular_tiempo_cosecha();
                         if (tiempo != -1)

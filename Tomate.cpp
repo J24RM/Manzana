@@ -4,9 +4,9 @@
 
 #include "Tomate.h"
 
-Tomate::Tomate() : Planta("Tomate", 0, 0) {}  
+Tomate::Tomate() : Planta("Tomate", 0, 5,1) {}  
 
-Tomate::Tomate(string n, float a_nece) : Planta(n, a_nece, 2.0) {}
+Tomate::Tomate(string n, float a_nece,int _tipo) : Planta(n, a_nece, 5.0, _tipo) {}
 
 
 

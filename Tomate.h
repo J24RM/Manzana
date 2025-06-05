@@ -10,7 +10,7 @@
 class Tomate : public Planta {
 public:
     Tomate();
-    Tomate(string n, float a_nece);
+    Tomate(string n, float a_nece, int _tipo);
 
     float calcular_tiempo(float flujo_agua); 
 
