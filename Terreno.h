@@ -1,3 +1,14 @@
+/*
+ *
+ * Proyecto Simulacion de Granja
+ * Jesus Rodriguez Mendoza
+ * A01713550
+ * 11/06/2025
+ * Clase llamada terreno que esta compuesta por hectares, desde esta clase se gestiona todo lo que tiene 
+ * que ver con las hectareas.
+ */
+
+
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -33,9 +44,17 @@ public:
 
 
 	//Funciones
+/**
+     * Funcion que se encarga de agregar las hectareas al terreno atraves de la composicion
+     * recibe los valores para crear la hectarea dentro de esta clase
+     */
+	void agregar_Hectarea(string tierra, int id, float f_agua);
 
-	void agregar_Hectarea(string tierra, int cap_plantas, int id, float f_agua);
 
+	/**
+     * Funcion que muestra los datos de las hectareas existentes dentro del terreno
+     * Muestra el Id, Tipo de Tierra y Flujo de agua
+     */
 	void mostrar_Hectareas();
 
 

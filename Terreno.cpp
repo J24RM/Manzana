@@ -1,3 +1,13 @@
+/*
+ *
+ * Proyecto Simulacion de Granja
+ * Jesus Rodriguez Mendoza
+ * A01713550
+ * 11/06/2025
+ * Clase llamada terreno que esta compuesta por hectares, desde esta clase se gestiona todo lo que tiene 
+ * que ver con las hectareas.
+ */
+
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -31,17 +41,25 @@ void Terreno::set_Nombre(string _N){
 
 //Funciones
 
-void Terreno::agregar_Hectarea(string tierra, int cap_plantas, int id, float f_agua){
+ /**
+     * Funcion que se encarga de agregar las hectareas al terreno atraves de la composicion
+     * recibe los valores para crear la hectarea dentro de esta clase
+     */
+void Terreno::agregar_Hectarea(string tierra, int id, float f_agua){
 	if (contador < MAX_HECTAREAS){
-		Hectarea hectarea(tierra, cap_plantas, id, f_agua);
+		Hectarea hectarea(tierra, id, f_agua);
 		hectareas[contador] = hectarea;
 		contador++;
 	}
 }
 	
+/**
+     * Funcion que muestra los datos de las hectareas existentes dentro del terreno
+     * Muestra el Id, Tipo de Tierra y Flujo de agua
+     */
 void Terreno::mostrar_Hectareas(){
 	for (int i = 0; i < contador; i++){
-		cout << i << ".- Id: " << hectareas[i].get_id() << endl;
+		cout << i << ".- Id: " << hectareas[i].get_id() << "  Tipo de tierra:"  << hectareas[i].get_tipo_de_tierra() << "  Flujo de agua:" << hectareas[i].get_flujo_agua() << "\n";
 	}
 }
 
