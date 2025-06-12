@@ -23,3 +23,10 @@ correr en mac: abrir el archivo que se creo en la misma carpeta del archivo .cpp
 
 -Si el flujo de agua es 0, el cálculo del tiempo de cosecha falla (división por cero).
 
+-Si el usuario al elegir el tipo de tierra pone un string, el programa fallara y si ingresa un float el programa empezara a funcionar raro
+
+-Si el usuario en cualquiera de los dos menus ingresa un string o float , el programa fallara
+
+-Si el usuario al ingresar a una hectarea en ves de poner un int cuando te piden el id, pone otra cosa, el programa fallara
+
+
